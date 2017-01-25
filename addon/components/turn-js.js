@@ -2,6 +2,7 @@ import Ember from 'ember';
 import layout from '../templates/components/turn-js';
 
 export default Ember.Component.extend({
+  layout: layout,
   acceleration: true,
   autoCenter: true,
   direction: 'ltr',
