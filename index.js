@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-turn-js',
+  name: 'ember-cli-turnjs',
 
   included: function(app) {
     this._super.included(app);
