@@ -11,14 +11,15 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/joshkinabrew/ember-cli-turnjs",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^5.1.7"
+    "ember-cli-babel": "^5.1.7",
+    "ember-cli-htmlbars": "^1.0.10"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
