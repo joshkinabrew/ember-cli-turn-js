@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = {
-  name: 'turnjs',
+  name: 'turn-js',
 
   included: function(app) {
     this._super.included(app);
