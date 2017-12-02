@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import layout from '../templates/components/turn-js';
 import jQuery from 'jquery';
+import layout from '../templates/components/turn-js';
 
 export default Ember.Component.extend({
   layout: layout,
