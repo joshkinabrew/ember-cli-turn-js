@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import jQuery from 'jquery';
 import layout from '../templates/components/turn-js';
 
 export default Ember.Component.extend({
@@ -21,7 +22,7 @@ export default Ember.Component.extend({
 
   _initializeTurnJS: Ember.on('didInsertElement', function() {
     var _this = this;
-    return this.$().turn({
+    return jQuery().turn({
       acceleration    : this.get('acceleration'),
       autoCenter      : this.get('autoCenter'),
       direction       : this.get('direction'),
