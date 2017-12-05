@@ -1,7 +1,8 @@
-import Ember from 'ember';
+import { on } from '@ember/object/evented';
+import Component from '@ember/component';
 import layout from '../templates/components/turn-js';
 
-export default Ember.Component.extend({
+export default Component.extend({
   layout: layout,
   acceleration: true,
   autoCenter: true,
@@ -19,7 +20,7 @@ export default Ember.Component.extend({
   when: null,
   animating: false,
 
-  _initializeTurnJS: Ember.on('didInsertElement', function() {
+  _initializeTurnJS: on('didInsertElement', function() {
     var _this = this;
     return this.$().turn({
       acceleration    : this.get('acceleration'),
