@@ -6,6 +6,9 @@ module.exports = {
 
   included: function(app) {
     this._super.included(app);
-    this.app.import('vendor/turn.js');
+    this.app.import('vendor/turn.js', {
+        type: 'vendor'
+      }
+    );
   }
 };
